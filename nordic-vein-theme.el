@@ -412,8 +412,8 @@
    ;;; = centaur-tabs =
 
    `(centaur-tabs-active-bar-face ((,class (:foreground ,active-fg))))
-   `(centaur-tabs-close-mouse-face ((,class (:foreground ,active-fg))))
-   `(centaur-tabs-close-selected ((,class (:inverse-video t))))
+   `(centaur-tabs-close-mouse-face ((,class (:inherit centaur-tabs-selected))))
+   `(centaur-tabs-close-selected ((,class (:inherit centaur-tabs-selected))))
    `(centaur-tabs-close-unselected ((,class (:inherit centaur-tabs-unselected))))
 
    `(centaur-tabs-default ((,class (:inherit default))))
@@ -428,7 +428,7 @@
 
    `(centaur-tabs-selected ((,class (:inherit highlight :background "#454c5f" :foreground ,glitch-white-fg))))
    ;; `(centaur-tabs-selected ((,class (:inherit highlight :background ,nord-cyan :foreground ,muted-fg))))
-   `(centaur-tabs-selected-modified ((,class (:inherit centaur-tabs-selected :background ,glitch-yellow-bg-hl :foreground ,glitch-yellow-fg))))
+   `(centaur-tabs-selected-modified ((,class (:inherit centaur-tabs-selected :foreground ,glitch-yellow-fg))))
    `(centaur-tabs-unselected ((,class (:inherit tab-line :foreground ,muted-fg :background ,bg))))
    `(centaur-tabs-unselected-modified ((,class (:inherit centaur-tabs-unselected :foreground ,glitch-yellow-fg))))
 
