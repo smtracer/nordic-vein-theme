@@ -10,26 +10,14 @@
 
        ;; == Text ==
 
-       ;; (bg                     "#24283b")
-       (bg "#2E3440")
-       ;; (bg "#242933")
-       ;; (bg "#2e3440")
-       ;; (bg "#2b303b")
-              ;; (bg "#2a303b")
-       ;; (bg "#2b303b")
-       ;; (dark-bg "#1c2030")
-       ;; (dark-bg "#1a1e2d")
-       (test-dark-bg "#1e2333")
-       (dark-bg "#272c35")
+       (bg                     "#2E3440")
+       (dark-bg                "#272c35")
        (active-bg              "#3c4453")
-       ;; (active-bg "#424a5c")
-       (active-bg-2              "#292e42")
+       (active-bg-2            "#292e42")
        (active-bg-hl           "#414868")
 
-       ;; (fg                     "#a9b1d6")
-       (fg "#c8cee4")
+       (fg                     "#c8cee4")
        (active-fg              "#c0caf5")
-       ;; (muted-fg "#606680")
        (muted-fg               "#6f779b")     ; inactive, but visible
        (inactive-fg            "#333a4d")     ; inactive, nearly hidden
 
@@ -37,21 +25,18 @@
 
        (glitch-black-bg        "#313750")
        (glitch-black-bg-hl     "#1f2335")
-       ;; (glitch-black-fg        "#1f2335")
        (glitch-black-fg        "#191D24")
        (glitch-black-fg-hl     "#565f89")
 
        ;; Functions, builtins
        (glitch-blue-bg         "#192a4d")
        (glitch-blue-bg-hl      "#7aa2f7")
-       ;; (glitch-blue-fg         "#7aa2f7")
        (glitch-blue-fg "#5E81AC")
        (glitch-blue-fg-hl      "#031130")
 
        ;; Variables, object properties
        (glitch-cyan-bg         "#274440")
        (glitch-cyan-bg-hl      "#73daca")
-       ;; (glitch-cyan-fg         "#73daca")
        (glitch-cyan-fg         "#8FBCBB")
        (glitch-cyan-fg-hl      "#222a29")
        (nord-cyan "#8FBCBB")
@@ -59,39 +44,29 @@
        ;; Info/Success
        (glitch-green-bg        "#273644")
        (glitch-green-bg-hl     "#4c9e8a")
-       ;; (glitch-green-fg        "#4c9e8a")
        (glitch-green-fg        "#A3BE8C")
        (glitch-green-fg-hl     "#11221e")
 
        ;; Keywords
        (glitch-magenta-bg      "#231c31")
        (glitch-magenta-bg-hl   "#bb9af7")
-       ;; (glitch-magenta-fg      "#bb9af7")
-       ;; (glitch-magenta-fg "#db6582")
-       ;; (glitch-magenta-fg "#eb6f92")
        (glitch-magenta-fg "#B48EAD")
        (glitch-magenta-fg-hl   "#171320")
 
        ;; Errors
        (glitch-red-bg          "#342c3c")
        (glitch-red-bg-hl       "#f7768e")
-       ;; (glitch-red-fg          "#f7768e")
        (glitch-red-fg          "#BF616A")
        (glitch-red-fg-hl       "#30030b")
 
-       ;; (glitch-white           "#c0caf5")
        (glitch-white "#dce1f9")
-       ;; (glitch-white-fg "#dce1f9")
        (glitch-white-fg "#BBC3D4")
        (glitch-white-bg-hl     "#bb9af7")
-       ;; (glitch-white-fg        "#c0caf5")
        (glitch-white-fg-hl     "#bb9af7")
 
        ;; Warnings
        (glitch-yellow-bg       "#37363f")
-       ;; (glitch-yellow-bg-hl    "#e0af68")
        (glitch-yellow-bg-hl "#464a53")
-       ;; (glitch-yellow-fg       "#e0af68")
        (glitch-yellow-fg       "#EBCB8B")
        (glitch-yellow-fg-hl    "#2a1d09")
 
@@ -121,31 +96,9 @@
 
        (qualifier         "#2ac3de")     ; types
        (safe              "#7892bf")     ; constants, numbers, strings
-       ;; (special           "#f6c177")     ; escape sequences
        (special "#eac086")
        (types "#7aa2f7")
        )
-  ;; (setq-default org-modern-todo-faces
-  ;;       '(("BLOCK" :background "#f7768e" :foreground "#181c2a" :weight bold)
-  ;;         ("DEPLOY" :background "#bb9af7" :foreground "#181c2a" :weight bold)
-  ;;         ("DONE" :background "#181c2a" :foreground "#565f89")
-  ;;         ("REVIEW" :background "#7aa2f7" :foreground "#181c2a")
-  ;;         ("TODO" :background "#e0af68" :foreground "#181c2a")
-  ;;         ("WAIT" :background "#f7768e" :foreground "#181c2a")
-  ;;         ("WIP" :background "#4c9e8a" :foreground "#181c2a" :weight bold)))
-  ;; (setq-default org-modern-todo-faces
-  ;;       	'(("LOCK" :background "#1c2030" :foreground "#f7768e" :weight bold)
-  ;;       	  ("DEAD" :background "#1c2030" :foreground "#565f89" :weight bold)
-  ;;       	  ("DEPL" :background "#1c2030" :foreground "#bb9af7" :weight bold)
-  ;;       	  ("DONE" :background "#1c2030" :foreground "#565f89" :weight bold)
-  ;;       	  ("REVW" :background "#1c2030" :foreground "#7aa2f7" :weight bold)
-  ;;       	  ("TODO" :background "#1c2030" :foreground "#e0af68" :weight bold)
-  ;;       	  ("WAIT" :background "#1c2030" :foreground "#f7768e" :weight bold)
-  ;;       	  ("WORK" :background "#1c2030" :foreground "#4c9e8a" :weight bold)))
-  ;; (setq-default org-modern-priority-faces
-  ;;       	'((?A :background "#f7768e" :foreground "#181c2a" :weight bold)
-  ;;       	  (?B :background "#e0af68" :foreground "#181c2a" :weight bold)
-  ;;       	  (?C :background "#4c9e8a" :foreground "#181c2a" :weight bold)))
 
   (custom-theme-set-faces
    'nordic-vein
@@ -194,8 +147,6 @@
    `(mouse                         ((,class (:foreground ,active-fg))))
    `(nobreak-hyphen                ((,class (:foreground ,special))))
    `(nobreak-space                 ((,class (:foreground ,special))))
-   ;; TODO: what is this
-   ;; `(read-multiple-choice-face     ((,class (:background ,active-bg :foreground ,active-fg))))
    `(region                        ((,class (:background ,info-bg :foreground ,info-fg))))
    `(scroll-bar                    ((,class (:foreground ,inactive-fg))))
    `(secondary-selection           ((,class (:background ,alt-info-bg :foreground ,alt-info-fg))))
@@ -212,9 +163,7 @@
    `(underline                     ((,class (:underline t))))
    `(variable-pitch                ((,class (:family "sans serif"))))
    `(variable-pitch-text           ((,class (:family "sans serif"))))
-   `(vertical-border ((,class (:foreground ,bg))));foreground ,dark-bg :background ,bg))))
-   ;; `(vertical-border ((,class (:inherit fill-column-indicator))))
-   ;; `(vertical-border               ((,class (:inherit border))))
+   `(vertical-border ((,class (:foreground ,bg))))
    `(warning                       ((,class (:foreground ,warning-fg))))
    `(window-divider                ((,class (:foreground ,dark-bg))))
    `(window-divider-first-pixel    ((,class (:inherit window-divider))))
@@ -375,14 +324,12 @@
    `(font-lock-doc-face ((,class (:inherit font-lock-comment-face))))
    `(font-lock-function-name-face ((,class (:foreground ,glitch-cyan-fg))))
    `(font-lock-function-call-face ((,class (:inherit font-lock-function-name-face))))
-   ;; `(font-lock-keyword-face ((,class (:foreground ,glitch-magenta-fg))))
    `(font-lock-keyword-face ((,class (:foreground ,safe))))   
    `(font-lock-negation-char-face ((,class (:foreground ,glitch-red-fg))))
    `(font-lock-number-face ((,class (:foreground ,safe))))
    `(font-lock-operator-face ((,class (:inherit font-lock-function-call-face))))
    `(font-lock-property-name-face ((,class (:foreground ,glitch-cyan-fg))))
    `(font-lock-property-use-face ((,class (:foreground ,glitch-cyan-fg))))
-   ;; `(font-lock-string-face ((,class (:foreground ,safe))))
    `(font-lock-string-face ((,class (:foreground ,safe))))   
    `(font-lock-type-face ((,class (:foreground ,safe))))
    `(font-lock-variable-name-face ((,class (:foreground ,glitch-blue-fg))))
@@ -427,7 +374,6 @@
    `(centaur-tabs-name-mouse-face ((,class (:foreground ,active-fg))))
 
    `(centaur-tabs-selected ((,class (:inherit highlight :background "#454c5f" :foreground ,glitch-white-fg))))
-   ;; `(centaur-tabs-selected ((,class (:inherit highlight :background ,nord-cyan :foreground ,muted-fg))))
    `(centaur-tabs-selected-modified ((,class (:inherit centaur-tabs-selected :foreground ,glitch-yellow-fg))))
    `(centaur-tabs-unselected ((,class (:inherit tab-line :foreground ,muted-fg :background ,bg))))
    `(centaur-tabs-unselected-modified ((,class (:inherit centaur-tabs-unselected :foreground ,glitch-yellow-fg))))
@@ -470,8 +416,6 @@
    `(company-tooltip-selection ((,class (:inherit company-echo-common))))
 
    ;; == diff-hl ==
-   ;; TODO diff fixes
-   ;; TODO lsp ui peek
    `(diff-added ((,class (:background ,glitch-green-bg :foreground ,glitch-green-fg))))
    `(diff-removed ((,class (:background ,glitch-red-bg :foreground ,glitch-red-fg))))
    `(diff-context ((,class (:background ,dark-bg :foreground ,active-fg))))
@@ -485,7 +429,6 @@
    `(lsp-ui-sideline-symbol ((,class (:foreground ,glitch-blue-fg))))
    `(lsp-ui-sideline-current-symbol ((,class (:foreground ,glitch-blue-fg :weight bold))))
    `(lsp-ui-sideline-code-action ((,class (:foreground ,glitch-yellow-fg :weight bold))))
-   ;; `(lsp-ui-peek-list ((,class (:background))))
 
    `(diff-hl-change ((,class (:background ,warning-bg-hl :foreground ,warning-bg-hl))))
    `(diff-hl-delete ((,class (:background ,error-bg-hl :foreground ,error-bg-hl))))
@@ -586,7 +529,6 @@
 
    ;;; = pulsar =
 
-   ;; `(pulsar-generic ((,class (:background "#171a27" :foreground ,info-fg))))
    `(pulsar-generic ((,class (:background "#2f354b"))))
    `(pulsar-blue ((,class (:background ,glitch-blue-bg :foreground ,glitch-blue-fg))))
    `(pulsar-cyan ((,class (:background ,glitch-cyan-bg :foreground ,glitch-cyan-fg))))
@@ -654,20 +596,6 @@
    `(which-key-note-face ((,class (:inherit comment))))
    `(which-key-separator-face ((,class (:inherit comment))))
    `(which-key-special-key-face ((,class (:foreground ,special))))
-
-   ;; == solaire ==
-   ;; TODO: finish this
-   `(solaire-default-face ((,class (:background ,bg))))
-   ;; `(solaire-default-face ((,class (:background "#1f2335"))))
-
-   ;; `(solaire-default-face ((,class (:background "#1c2030"))))
-   ;; solaire-fringe-face       fringe
-   ;; solaire-line-number-face  line-number
-   ;; solaire-hl-line-face      hl-line
-   ;; solaire-org-hide-face     org-hide, org-indent
-   ;; solaire-mode-line-face    mode-line
-   ;; solaire-mode-line-inactive-face   mode-line-inactive
-   ;; solaire-header-line-face  header-line
 
    `(doom-modeline-persp-buffer-not-in-persp ((,class (:foreground ,special :weight bold))))
    `(doom-modeline-persp-name ((,class (:foreground ,glitch-cyan-fg :weight bold))))
